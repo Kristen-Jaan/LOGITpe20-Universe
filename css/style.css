@@ -116,8 +116,9 @@ body {
 
 .section-about {
     background-color: var(--light-color);
-    padding: 35rem 0;
+    padding: 40rem 0;
     margin-top: -20rem;
+    
 }
 
 .column {
@@ -223,4 +224,49 @@ body {
 .composotion__photo--p3 {
     left: 49rem;
     top: 85rem;
+}
+
+.section-features {
+    height: 75vh;
+    background-image:linear-gradient(to right bottom, var(--light-color), var(--dark-color)), url("../images/Universe.jpg");
+    clip-path: polygon(0 21%, 100% 4%, 100% 97%, 0 100%);
+    background-size: cover;
+    padding: 32rem 0;
+    margin-top: -15rem;
+    
+}
+
+.column-1-of-4 {
+    float: left;
+    width: 25%;
+    height: 300px;
+    padding: 2rem;
+}
+
+.feature-box {
+    background-color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s;
+
+}
+
+.feature-box h3, p {
+    color: var(--medium-color);
+}
+
+.feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.2);
+}
+
+.feature-box i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, var(--light-color), var(--dark-color));
+    -webkit-background-clip: text;
+    color: transparent;
 }
